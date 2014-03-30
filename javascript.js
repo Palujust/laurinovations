@@ -1,9 +1,38 @@
+$(document).ready(function(){
 
 
-$("#menu").click(function(){
+	$("#menu").hover(function(){
 
 
 	
-	alert("derp");
+		$("#menu").animate(
 
-})
+			{
+    		
+    			left: "0px",
+  				}, 500, function() {
+    			// Animation complete.
+  			}
+
+		);
+
+	});
+	$("#menu").mouseleave(function(){
+
+
+	
+		$("#menu").animate(
+
+			{
+    		
+    			left: "-180px",
+  				}, 500, function() {
+    			// Animation complete.
+  			}
+ 
+		);
+
+	})
+
+});
+
