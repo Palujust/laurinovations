@@ -2,19 +2,22 @@
 <head><title>Laurinovations</title></head>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<script src="jquery-scrollto.js" type="text/javascript"></script>
 <script src="javascript.js" type="text/javascript"></script>
 <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Metrophobic' rel='stylesheet' type='text/css'>
 <body background="woodb.jpg" style="text-align: center;">
 
 <div id="menu" >
-	<li>Home</li>
-	<li>About Us</li>
-	<li>Photo Gallery</li>
-	<li>Contact</li>
-	<img src="minilogosquare.png" width="150px" height="150px"; style="margin-left:20px;"/>
+
+	<img src="toolbox.png" id="toolboxtitle"/>
+	<div class="linkcontainer"><img src="home.png" class="navLink" id="homeLink"/></div>
+	<div class="linkcontainer"><img src="about.png" class="navLink"id="aboutLink"/></div>
+	<div class="linkcontainer"><img src="photos.png" class="navLink" id = "photoLink"/></div>
+	<div class="linkcontainer"><img src="contact.png" class="navLink" id= "contactLink"/></div>
+	
 </div>
-<span id="homeDiv">
+<span id="homeDiv" class = "contentDiv">
 	<img src="logo.png" id="big_logo" />
 	
 	
@@ -23,6 +26,18 @@
 		<p>Welcome to Laurinovations.</p>
 		<p style="font-style:italic">"Other generic teaser text goes here!"</p>
 	</div>
+</span>
+
+<span id="aboutDiv" class = "contentDiv">
+	About us
+</span>
+
+<span id="photoDiv" class = "contentDiv">
+	Gallery
+</span>
+
+<span id="contactDiv" class = "contentDiv">
+	contact
 </span>
 
 </body>
